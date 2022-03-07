@@ -1,0 +1,192 @@
+
+.hold-everything{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 170px;
+}
+
+/* div backgrouond  */
+.containerr{
+  width: 430px;
+  border: 2px solid rgb(206, 206, 206);
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+/* div title  */
+.containerr header{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+/* field width  */
+.containerr .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+/* next-field hide  */
+.form-con{
+  display: flex;
+  width: 400%;
+}
+/* come out field width  */
+.page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+/* diffrent form title  */
+.title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+/* input field width  */
+.field{
+  width: 330px;
+  height: 35px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+/* input field label  */
+.label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+/* input weiting fild  */
+.field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+/* fild button  */
+.field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #33dce2;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000a44;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+/* button end  */
+.progress-bar-c{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.containerr .progress-bar-c .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.prograce-title{
+  font-weight: 400;
+  font-size: 14px;
+  color: #424242;
+  margin-bottom: 8px;
+}
+.progress-bar-c .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #444343;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+}
+/* progress bar round fill color  */
+.progress-bar-c .step .bullet.active{
+  border-color: #01003f;
+  background: #01328d;
+}
+
+
+.progress-bar-c .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar-c .step .bullet.active span{
+  display: none;
+}
+.progress-bar-c .step .bullet:before,
+.progress-bar-c .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 9px;
+  right: -56px;
+  height: 3px;
+  width: 45px;
+  background: #585a5a;
+}
+/* progress bar color  */
+
+.progress-bar-c .step .bullet.active:after{
+  background: #53e427;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar-c .step:last-child .bullet:before,
+.progress-bar-c .step:last-child .bullet:after{
+  display: none;
+}
+/* title color  */
+.progress-bar-c .step p.active{
+  color: #004ad4;
+  transition: 0.2s linear;
+  font-weight: 600;
+}
+.progress-bar-c .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar-c .step .check.active{
+  display: block;
+  color: #fff;
+}
+

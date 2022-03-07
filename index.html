@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/registration.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>employe landing page</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- navbar start here  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light nv-bg-color ">
+      <div class="container">
+        <a class="navbar-brand" href=""> <img src="assest/EC Logo.png" alt="" srcset=""> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link links-style active" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links-style-2" href="#how-it-works">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links-style-2" href="#documents">Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link links-style-2" data-bs-toggle="modal" data-bs-target="#contactus" href="">Needs Helps?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    
+
+    <!-- navbar end here  -->
+
+
+    <!-- hero section start here  -->
+
+    <hero>
+      <div class="bg-image-c">
+        <div class="container">
+          <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center justify-content-center height-c">
+            <div class="col-lg-7 p-4 p-lg-0 pt-lg-3">
+              <h1 class="display-5 text-white fw-bold lh-4">Welcome to EmployeeConnect!</h1>
+              <p class="text-white p-subtitle  mt">Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world’s most popular front-end open source toolkit, </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3">
+                <button type="button" href="" data-bs-toggle="modal" data-bs-target="#signup" class="btn bbutton-style ">Let's Get Started<i
+                    class="fa-solid fa-angles-right"></i></button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#contactus"  class="btn bbutton-style">Contact Us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </hero>
+
+
+<!-- popup form  -->
+<div class="modal" id="signup">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">EmployeeConnect</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label class="form-label required">Your Email</label>
+                      <input type="email" class="form-control">
+                  </div>
+                  
+                
+              <div class="mb-3">
+                <label class="form-label required">Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label class="form-label required"> Confirm Password</label>
+                <input type="password" class="form-control">
+              </div>
+                 
+                  
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+              <button type="submit"  class="btn btn-danger">Sign In</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- contact us  -->
+
+<div class="modal" id="contactus">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Contact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label class="form-label required">First Name</label>
+                      <input type="email" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label required">Last Name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  
+                
+                  <div class="mb-3">
+                    <label class="form-label required">Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label required">Type ypur message here</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                
+                 
+                  
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Send</button>
+              <button type="submit" data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- popup form  -->
+
+
+    <!-- hero section end here  -->
+
+  </header>
+
+  <!-- header end  -->
+
+
+  <!-- progress section -->
+  <div class="container-sm p-0 mat bg-white bd-c">
+
+    <div class="d-flex text-center p-3">
+
+      <div class="col-md-3 ">
+        <div class="counter br-c">
+          <i class="fa-solid fa-champagne-glasses fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+          <p class="count-text ">Our Customer</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 ">
+        <div class="counter br-c">
+          <i class="fa-solid fa-face-smile-beam fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+          <p class="count-text ">Happy Clients</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 ">
+        <div class="counter br-c">
+          <i class="fa fa-lightbulb fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+          <p class="count-text ">Project Complete</p>
+        </div>
+      </div>
+
+      <div class="col-md-3 ">
+        <div class="counter ">
+          <i class="fa-solid fa-mug-hot fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+          <p class="count-text ">Coffee With Clients</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- progress section -->
+
+
+  <!-- how it works start -->
+
+  <article class="bg mat-1 p-sm-1" id="how-it-works">
+    <div class="container mab-1">
+      <h1 class="section-title mat-1">How It Works</h1>
+      <div class="row mat-1">
+
+        <div class="col-lg-6">
+          <p class=" p-subtitle-2"> We are very happy to have you join our organisation. I hope you are ready to fall in
+            love with your new job and meet your new colleagues. We’ve planned out your first day to help you get
+            acclimated a bit easier. </p>
+
+          <p class=" p-subtitle-2"> First, we’ll start with a short stop for morning coffee in the office kitchen. Then
+            we’ll move on to human resources to sign an employment contract, benefit plan forms, and other important
+            paperwork. After that, we’ll get you settled into your new office and set up your phone and computer.</p>
+
+          <p class=" p-subtitle-2">In the meantime, if you can go through the onboarding menu below and fill out the
+            relevant forms. If you have any questions, we will be happy to answer. Please don’t hesitate to contact us
+            by email HR@employeeconnect.com or phone 88888028.</p>
+
+          <p class=" p-subtitle-2">Once that’s done there will be a brief onboarding process that will introduce you to
+            our policies, culture, and mission. Then you will have a chance to meet your supervisor who will inform you
+            all about your new role at our company.</p>
+
+          <p class=" p-subtitle-2">Again, congratulations. We are thrilled to you have you join the team and look
+            forward to meeting you!</p>
+
+          <p class=" p-subtitle-2"> Best, </p>
+        </div>
+
+        <div class="col-lg-6 ">
+          <div class="embed-responsive ms-auto">
+            <iframe class="video-c" src="https://www.youtube.com/embed/bSWG_DQXuZI" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+  <!-- section start  -->
+  <section class="mat-1 bg-light p-5">
+    <div class="container">
+      <div class="row">
+
+        <!--  ===========================
+                left-side 
+        =========================== -->
+
+        <div class="col-md-6">
+          <div class="content">
+            <img class="image-c-s" src="assest/john duo.jpg" alt=""> <br>
+            <div class="user-info mt">
+              <label for="">Name:</label>
+              <h6>John Duo</h6>
+              <label for="">Contact:</label>
+              <h6>+1 333 222 1</h6>
+            </div>
+          </div>
+
+
+          <!-- <form action=""> -->
+
+          <div class=" info-document mt">
+
+
+            <ul class="info-doc">
+              <li class="p-sm-2 border" data-bs-toggle="modal" data-bs-target="#personal" ><a class="text-dark " href="#Personal" >Personal</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border" data-bs-toggle="modal" data-bs-target="#content" ><a class="text-dark full-links" href="#Content" >Content</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"  data-bs-toggle="modal" data-bs-target="#banking" ><a class="text-dark full-links" href="#Banking">Banking</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#medical">Medical</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Nationality">Nationality</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Membership">Membership</a><i class="fa-solid fa-circle-xmark right"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Education">Education</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Licence">Licence</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Vaccination">Vaccination</a><i class="fa-solid fa-circle-check right icon-c"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Emergency">Emergency</a><i class="fa-solid fa-circle-xmark right"></i></li>
+              <li class="p-sm-2 border"><a class="text-dark full-links" href="#Avater">Avater</a><i class="fa-solid fa-face-grin right"></i></li>
+            </ul>
+            
+          </div>
+          </form>
+        </div>
+
+        <!--  ===========================
+                right-side 
+        =========================== -->
+
+        <div class="col-md-6">
+          <h1 class="center-item mat-1 mab-2"> Profile Compleated</h1>
+          <div class="progress blue mat-1">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+                <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+
+        </div>
+
+        <!-- popup  -->
+        <!-- personal  -->
+        <div class="modal" id="personal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Personal Info</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="mb-3">
+                              <label class="form-label required">First Name</label>
+                              <input type="text" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label required">Last Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label required">Date of Birth</label>
+                          <input type="date" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label required">Phone Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                          <div class="mb-3">
+                              <label class="form-label required">Email</label>
+                              <input type="email" class="form-control">
+                          </div>
+                          
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-danger">Cancel</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- content  -->
+      <div class="modal" id="content">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Write Content</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label required">Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label required">Fitcher Image</label>
+                          <input type="media" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label required">Description</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" data-bs-dismiss="modal" class="btn btn-danger" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- banking  -->
+
+      <div class="modal" id="banking">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bank Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label required">Bank Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label required">Account Holder Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label required">Account Type</label>
+                          <input type="text" class="form-control">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label required">Comments</label>
+                        <textarea class="form-control"></textarea>
+                      </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" data-bs-dismiss="modal" class="btn btn-danger" class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- popup  -->
+
+        </div>
+      </div>
+  </section>
+
+
+
+
+  <!-- section end -->
+
+  <!-- gallery section  -->
+  <section>
+    <h1 class="section-title mat-1">Our Gallery</h1>
+    <div class="container center-item mat-1">
+      <div class="row d-flex justify-content-lg-between align-items-center">
+        <div class="col-md-4 p-1 gallery-item">
+          <img src="assest/image.png" alt="" height="250" width="300">
+        </div>
+        <div class="col-md-4 p-1 gallery-item">
+          <img src="assest/image.png" alt="" height="250" width="300">
+        </div>
+        <div class="col-md-4 p-sm-1 gallery-item">
+          <img  src="assest/image.png" alt="" height="250" width="300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- gallery section end  -->
+
+
+  <!-- training section  -->
+
+  
+
+
+
+
+
+
+  <!-- training section  -->
+
+
+
+  <article class="bg p-c mat-1" id="documents">
+    <div class="container">
+      
+      <div class="row mat-1">
+        <div class="col-md-4">
+          <h4 class="center-item p-sm-2">My Self</h4>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged
+          </p>
+        </div>
+
+
+
+
+
+        <div class="col-md-4 ">
+          <h4 class="center-item p-sm-2">Documents</h4>
+          <ul class="pollicy-items">
+            <li class="p-sm-2 responsive-c" data-bs-toggle="modal" data-bs-target="#policy"><a class="text-dark" href="#aniy">Anti-Discrimination and Equal Employment</a><i
+                class="fa-solid  fa-circle-check right"></i></li>
+            <li class="p-sm-2 responsive-c"><a class=" text-black" href="#computer">Computer Email and Internet Policy.pdf</a><i
+                class="fa-solid fa-circle-check right"></i></li>
+            <li class="p-sm-2 responsive-c" ><a class=" text-black" href="#clove">Glove Box Guide November 2016.pdf</a><i
+                class="fa-solid fa-circle-check right"></i></li>
+            <li class="p-sm-2 responsive-c"><a class=" text-black" href="#test">Test Policy</a><i class="fa-solid fa-circle-xmark right"></i></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+      <div class="col-md-4 ">
+        <h4 class="center-item p-sm-2">Training</h4>
+        <ul class="pollicy-items">
+          <li class=" p-sm-2 responsive-c"><a class=" text-black" href="#demo1">Demo #1</a><i class="fa-solid fa-circle-check right"></i></li>
+          <li class="p-sm-2 responsive-c"><a class=" c-t text-black" href="#demo2">Demo #2</a><i class="fa-solid fa-circle-check right"></i></li>
+          <li class="p-sm-2 responsive-c"><a class=" text-black" href="#demo3">Demo #3</a><i class="fa-solid fa-circle-check right"></i></li>
+          <li class="p-sm-2 responsive-c"><a class=" text-black" href="#demo4">Demo #4</a><i class="fa-solid fa-circle-check right"></i></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </article>
+
+
+  <!-- popup  -->
+
+  <div class="modal" id="policy">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                       <p> 
+ 
+ 
+                        ANTI-DISCRIMINATION AND EQUAL 
+                        EMPLOYMENT OPPORTUNITY 
+                         VERSION: DEMO 
+                        DATE: APRIL 2012 
+                        OWNER: GENERAL MANAGER 
+                        SCOPE:     ALL EMPLOYEES/CONTRACTORS 
+                         
+                        April 2012 / ANTI-DISCRIMINATION AND EQUAL EMPLOYMENT OPPORTUNITY / VERSION 1 
+                         
+                        ANTI-D I SCRIM I NATIO N  AND  EQUAL  EM P L OYM ENT 
+                        OP P ORTUNITY  
+                         
+                         
+                        Anti-Discrimination and Equal Employment Opportunity  
+                        The Company wholeheartedly supports the principal of fair treatment in employment and 
+                        recognises that the successful implementation of fair treatment is crucial to business performance.  
+                        It is our policy to promote an environment free from discrimination,  harassment, victimisation and 
+                        bullying and that all employees, job applicants, customers, franchisees, agents and contractors 
+                        should be treated fairly and with dignity and respect. 
+                        Application 
+                        This Policy is not limited to the workplace or work hours. This Policy extends to all functions and 
+                        places that are work related. For example, work functions, social events including Christmas 
+                        parties and client functions. Equal Employment Opportunity (EEO) laws apply to all areas of 
+                        employment, as well as the provision of goods and services.  You must always ensure your 
+                        behaviour is professional and in accordance with this policy when you are formally or informally 
+                        representing the Company or are identified as an employee.  The contents of this Policy apply to 
+                        all workplace participants. However, this Policy does not form part of any contract between any 
+                        workplace participant and the Company. 
+                        Discrimination 
+                        Unlawful discrimination is defined as any behaviour that treats a person less favourably because 
+                        of personal characteristics that are unrelated to job requirements and are prohibited by law.  
+                        Discrimination is unacceptable in all areas of employment including recruitment, training, 
+                        promotion, conditions and benefits, performance management and termination.  All decisions 
+                        regarding employment should be made on the genuine or ‘inherent’ requirements of the position 
+                        and the person’s actual abilities; and not assumptions, stereotypes or personal preferences.  It is 
+                        unacceptable and illegal to discriminate against a person based directly or indirectly on the 
+                        following personal attributes or ‘prohibited grounds 
+                         Gender  
+                         Race, colour, nationality, ethnicity 
+                         Age 
+                         Religious belief or activity 
+                         Marital / relationship status 
+                         Parental or carer’s responsibilities 
+                         Pregnancy (or potential pregnancy)  
+                         Breastfeeding 
+                         Disability / impairment 
+                         HIV / AIDS 
+                         Sexuality / sexual orientation 
+                         Transgender, gender identity, 
+                        transexuality  
+                         Irrelevant medical record 
+                         Irrelevant or spent convictions 
+                         Industrial / trade union activity  
+                         Political beliefs or association 
+                         Physical features  
+                         
+                        April  2012 / ANTI-DISCRIMINATION AND EQUAL EMPLOYMENT OPPORTUNITY / VERSION 1 
+                         
+                        Harassment 
+                        Harassment is a form of discrimination involving unwanted, uninvited or unwelcome behaviour 
+                        relating to the prohibited grounds, which offends, intimidates or humiliates a person.  However, 
+                        conduct will not be harassment if a reasonable person, having regard to all the circumstances, 
+                        would not have anticipated that the conduct would offend, humiliate or intimidate the other 
+                        person.  Harassment includes verbal, visual and physical actions as well as comments made on 
+                        social networking media and does not have to be intentional to be unlawful and unacceptable.  
+                        Behaviour which creates a hostile working environment for other workplace participants can also 
+                        be unlawful. 
+                        Examples of sexual harassment include, but are not limited to: 
+                         Unnecessary, unwanted or intrusive physical contact this could include pinching, touching, 
+                        grabbing, kissing or hugging 
+                         Sexual jokes or comments 
+                         Suggestive comments about a person’s body or appearance 
+                         Explicit conversations, innuendo or offensive gestures 
+                         Obscene, explicit or inappropriate photos, graphics, graffiti, screen savers etc 
+                         Sending rude or offensive emails, attachments or text messages 
+                         Accessing or downloading sexually explicit material from the Internet 
+                         Repeated questions about one’s personal life or persistent invitations to go out where they 
+                        are refused 
+                         
+                        Bullying 
+                        Bullying is repeated, unreasonable behaviour directed towards an individual or group, that 
+                        creates a risk to health and safety. Unreasonable behaviour means behaviour that a reasonable 
+                        person, having regard to all the circumstances, would expect to victimise, humiliate, undermine or 
+                        threaten.  It is not bullying for a manager or supervisor to counsel you about your performance.  
+                        Performance counselling is a necessary part of ensuring that workplace participants meet 
+                        standards of work and behaviour.  Also, other reasonable managerial actions such as disciplinary 
+                        action, work directions and orders, and allocation of work in compliance with business needs and 
+                        systems do not constitute bullying. 
+                        Victimisation 
+                        Threats or unfair treatment of a person because they have made a complaint or supported 
+                        someone who has made a complaint is illegal will not be tolerated.  You are encouraged to report 
+                        any incidents you feel are inappropriate or any actions you feel are victimisation after making a 
+                        complaint.  
+                        Rights and Responsibilities 
+                        All workplace participants must: 
+                         ensure they do not engage in any unlawful conduct towards other workplace participants, 
+                        customers/clients or others with whom they come into contact through work; 
+                         ensure they do not aid or encourage others to engage in unlawful conduct; 
+                         follow the complaint procedure if they experience any unlawful conduct; 
+                         report any unlawful conduct they see occurring to others in the workplace in accordance 
+                        with the complaint procedure; and  
+                         
+                        April  2012 / ANTI-DISCRIMINATION AND EQUAL EMPLOYMENT OPPORTUNITY / VERSION 1 
+                         
+                         treat the matter confidentially.  
+                        Complaint Handling Procedure 
+                        If you consider that you have been harassed or bullied you are advised to keep a written record 
+                        of any incidents that occur, including dates, times and locations.  If an incident is witnessed, ask 
+                        the witness to make a note of what they saw.  In cases of harassment, where appropriate, you 
+                        should approach the other person and tell them politely but firmly their behaviour is offensive or 
+                        makes you uncomfortable and you want it to stop.  If you are not comfortable in doing this, or 
+                        have already done so without success, you should report the situation to your immediate line 
+                        manager, the general manager or the technical director of Employee Connect, preferably in 
+                        writing, although it can be verbal and followed up in writing.   
+                        If you witness any harassment or discrimination of another person you should report it to 
+                        management immediately.  This also includes any behaviour from a customer, visitor, agent or 
+                        contractor. All complaints will be taken seriously.  Depending on the situation, a formal or informal 
+                        process may be taken to resolve the issue.  Where a formal process is used, written statements 
+                        may be required and a formal investigation will be undertaken.  An investigation generally 
+                        involves, collecting information about the complaint and then making a finding based on the 
+                        available information as to whether or not the alleged behaviour occurred. Once a finding is 
+                        made, the General Manager or Technical Director (after taking external counsel) will make 
+                        recommendations about resolving the complaint. 
+                        For the safe and efficient conduct of an investigation, workplace participants may be required not 
+                        to report for work during the period of an investigation.   The Company may also provide 
+                        alternative duties or work during the investigation period.  Generally, employees will be paid their 
+                        normal pay during any such period. 
+                        Where a complaint involves allegations that may result in disciplinary action, it will generally need 
+                        to be dealt with in accordance with the formal complaints procedure.   
+                        Confidentiality 
+                        Management will endeavour to maintain confidentiality as far as possible.  However, it may be 
+                        necessary to speak with other workplace participants in order to determine what happened, to 
+                        afford fairness to those against whom the complaint has been made and to resolve the complaint. 
+                        If a complaint is raised and it appears that unlawful conduct has potentially occurred, the 
+                        Company will endeavour to take appropriate action in relation to the complaint.  
+                        All workplace participants involved in the complaint must also maintain confidentiality, including 
+                        the person who lodges the complaint. Spreading rumours or gossip may expose workplace 
+                        participants to a defamation claim. Workplace participants may discuss the complaint with a 
+                        designated support person or representative (who is not a workplace participant employed or 
+                        engaged by the Company). However, this person must also maintain confidentiality. 
+                        Consequences for Breaches of this Policy 
+                        Breaches of this policy, including confidentiality requirements, will result in disciplinary action.  
+                        The appropriate action to take will depend on the particular situation and will be determined by 
+                        the appropriate manager.  Actions may include: 
+                         An apology or an undertaking that certain behaviour stop; and/or 
+                         Changing work arrangements including transfer to another department/location 
+                         A requirement to undertake an education or training program 
+                         Monitoring to ensure that there are no further problems 
+                         
+                        April  2012 / ANTI-DISCRIMINATION AND EQUAL EMPLOYMENT OPPORTUNITY / VERSION 1 
+                         
+                         Demotion 
+                         Disciplinary action, up to and including termination of employment.  
+                         Agents and contractors (including temporary contractors) who are found to have breached 
+                        this Policy may have their contracts terminated or not renewed. 
+                        If a person makes an unfounded complaint or a false complaint in bad faith (e.g. making up a 
+                        complaint to get someone else in trouble or making a complaint where there is no foundation for 
+                        the complaint), that person may be disciplined and may be exposed to a defamation claim. 
+                        Variations 
+                        The Company reserves the right to vary, replace or terminate this Policy from time to time at its 
+                        absolute discretion. 
+                         
+                         .</p>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Done</button>
+                <button type="submit" data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+
+
+  <!-- popup  -->
+
+  <!-- google map  -->
+
+
+  <section>
+    <h1 class="section-title mat-1">Our Location</h1>
+    <div class="">
+      <iframe class="gmap-res mat-1"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.5814902620214!2d151.2133608152647!3d-33.87467502679514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae140efb6175%3A0xccc2d7c75c39856c!2s58%20Riley%20St%2C%20Darlinghurst%20NSW%202010%2C%20Australia!5e0!3m2!1sen!2sbd!4v1646576060157!5m2!1sen!2sbd"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="fast"></iframe>
+    </div>
+  </section>
+
+  <footer class="mat-1 bg p-0">
+    <div class="mat-2">
+      <ul class="footer-items  p-sm-3 d-flex justify-content-center align-items-center">
+        <li><a href="#"><i class="fa-brands social-item f-i-s p-sm-2 fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands social-item f-i-s p-sm-2 fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands social-item f-i-s p-sm-2 fa-twitter-square"></i></a></li>
+        <li><a href="#"><i class="fa-brands social-item f-i-s p-sm-2 fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <p class="p-0 center-item">All text & content © EmployeeConnect</p>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/pro.js"></script>
+</body>
+
+</html>
